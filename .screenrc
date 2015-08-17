@@ -1,0 +1,34 @@
+startup_message off
+vbell off
+autodetach on
+
+shell  bash
+acladd kiransrini 
+
+defscrollback  10000
+defutf8 on
+nonblock on
+
+idle 0
+
+logfile $HOME/logs/sessionlog_%n.log
+logtstamp on
+logtstamp after 120
+deflog off
+
+hardstatus alwayslastline 
+hardstatus string '%{= BW}[%{W}%d/%m/%y %C %A%{W}] [%{ BW}%w%{= BW}]'
+
+
+#Fix stupid screen overwriting
+#Example: Open a file in vim and quit. You will see your shell prompt at bottom
+#with rest of your file in top. Annoying. Switcing it off by switching on
+#altscreen
+altscreen on
+
+termcap xterm 'XT:AF=\E[3%dm:AB=\E[4%dm:AX'
+terminfo xterm 'XT:AF=\E[3%p1%dm:AB=\E[4%p1%dm:AX'
+termcapinfo xterm 'XT:AF=\E[3%p1%dm:AB=\E[4%p1%dm:AX:hs:ts=\E]2;:fs=\007:ds=\E]2;screen\007'
+termcap xtermc 'XT:AF=\E[3%dm:AB=\E[4%dm:AX'
+terminfo xtermc 'XT:AF=\E[3%p1%dm:AB=\E[4%p1%dm:AX'
+termcapinfo xtermc 'XT:AF=\E[3%p1%dm:AB=\E[4%p1%dm:AX:hs:ts=\E]2;:fs=\007:ds=\E]2;screen\007'

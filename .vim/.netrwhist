@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/cygdrive/c/ProgramData/Riverbed/Steelhead_Mobile/config'
+let g:netrw_dirhist_2='/home/ksrinivaspura/work/ims/lib'
+let g:netrw_dirhist_3='/home/ksrinivaspura/diff'
+let g:netrw_dirhist_4='/cygdrive/c/source/node/client'
+let g:netrw_dirhist_5='/cygdrive/c/source/salina/git/shmobile/client/sport/protocol/smb2'
+let g:netrw_dirhist_6='/cygdrive/c/source/salina/git/shmobile/client/sport/protocol/smbsign'
+let g:netrw_dirhist_7='/home/ksrinivaspura/tmp/trunk'
